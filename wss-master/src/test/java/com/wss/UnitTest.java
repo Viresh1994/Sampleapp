@@ -6,13 +6,21 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
-
+import java.util.ArrayList;
 import com.wss.controller.DevicesController;
 import com.wss.controller.LoginContoller;
+
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import jdk.nashorn.internal.ir.annotations.Ignore;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class UnitTest {
+	
+	private ArrayList<String> list;
 
 	@Autowired
 	private LoginContoller loginController;
@@ -39,5 +47,43 @@ public class UnitTest {
        String str="This is my first junit program";
        Assert.assertEquals("This is my first junit program",str);
       }
+	@BeforeClass		
+    public static void m1() {							
+        System.out.println("Using @BeforeClass , executed before all test cases ");					
+    }		
+
+    @Before		
+    public void m2() {					
+        list = new ArrayList<String>();					
+        System.out.println("Using @Before annotations ,executed before each test cases ");					
+    }		
+
+    @AfterClass		
+    public static void m3() {							
+        System.out.println("Using @AfterClass ,executed after all test cases");					
+    }		
+
+    @After		
+    public void m4() {					
+        list.clear();			
+        System.out.println("Using @After ,executed after each test cases");					
+    }		
+
+    @Test		
+    public void m5() {					
+        list.add("test");					
+        assertFalse(list.isEmpty());			
+        assertEquals(1, list.size());			
+    }		
+
+    @Ignore		
+    public void m6() {					
+        System.out.println("Using @Ignore , this execution is ignored");					
+    }		
+
+    @Test(timeout = 10)			
+    public void m7() {					
+        System.out.println("Using @Test(timeout),it can be used to enforce timeout in JUnit4 test case");					
+    }		
 
 }
