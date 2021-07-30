@@ -33,5 +33,11 @@ public class UnitTest {
 			Assert.fail();
 		}
 	}
+	@Test
+        public void Setup()
+     {
+       String str="This is my first junit program";
+       assertEquals("This is my first junit program",str);
+      }
 
 }
