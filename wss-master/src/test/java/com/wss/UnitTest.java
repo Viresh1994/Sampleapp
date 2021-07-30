@@ -72,8 +72,8 @@ public class UnitTest {
     @Test		
     public void m5() {					
         list.add("test");					
-        assertFalse(list.isEmpty());			
-        assertEquals(1, list.size());			
+        Assert.assertFalse(list.isEmpty());			
+        Assert.assertEquals(1, list.size());			
     }		
 
     @Ignore		
