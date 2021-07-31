@@ -89,6 +89,6 @@ public class UnitTest {
 public void Setup()
 {
    String str="This is my first junit program";
-   assertEquals("This is my first junit program",str);
+   Assert.assertEquals("This is my first junit program",str);
 }
 }
