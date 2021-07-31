@@ -84,6 +84,11 @@ public class UnitTest {
     @Test(timeout = 10)			
     public void m7() {					
         System.out.println("Using @Test(timeout),it can be used to enforce timeout in JUnit4 test case");					
-    }		
-
+    }
+	@Test
+public void Setup()
+{
+   String str="This is my first junit program";
+   assertEquals("This is my first junit program",str);
+}
 }
