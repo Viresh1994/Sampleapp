@@ -88,7 +88,7 @@ public class UnitTest {
 	@Test
 public void m8()
 {
-   String str="This is my Second junit program";
+   String str="This is my second junit program";
    Assert.assertEquals("This is my second junit program",str);
 }
 }
