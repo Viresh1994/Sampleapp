@@ -80,6 +80,11 @@ public class UnitTest {
     public void m6() {					
         System.out.println("Using @Ignore , this execution is ignored");					
     }		
+	@Test(timeout=10)
+	public void m7()
+	{
+		System.out.println("This test will be timedout for 10 secons);
+				   }
 	@Test
 public void m8()
 {
