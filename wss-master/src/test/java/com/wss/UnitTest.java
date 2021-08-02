@@ -80,11 +80,6 @@ public class UnitTest {
     public void m6() {					
         System.out.println("Using @Ignore , this execution is ignored");					
     }		
-
-    @Test(timeout = 10)			
-    public void m7() {					
-        System.out.println("Using @Test(timeout),it can be used to enforce timeout in JUnit4 test case");					
-    }
 	@Test
 public void m8()
 {
