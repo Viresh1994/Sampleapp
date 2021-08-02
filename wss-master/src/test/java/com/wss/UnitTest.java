@@ -83,8 +83,8 @@ public class UnitTest {
 	@Test(timeout=10)
 	public void m7()
 	{
-		System.out.println("This test will be timedout for 10 secons);
-				   }
+		System.out.println("This test will be timedout for 10 seconds");
+        }
 	@Test
 public void m8()
 {
