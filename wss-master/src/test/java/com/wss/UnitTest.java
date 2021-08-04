@@ -32,6 +32,10 @@ public class UnitTest {
 	public void loginContollerLoginPage() {
 		Assert.assertEquals("login", loginController.getLoginPage());
 	}
+	@Test
+	public void loginControllerHomePage(){
+		Assert.assertEquals("index", loginController.getHomePage());
+	}
 	
 	@Test
 	public void devices() {
