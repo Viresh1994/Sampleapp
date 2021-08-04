@@ -38,6 +38,8 @@ public class UnitTest {
 	@Test
 	public void loginControllerHomePage(){
 		Assert.assertEquals("index", loginController.getHomePage());
+		Assert.assertEquals("analytics", loginController.getAnalytics());
+		Assert.assertEquals("redirect:login", loginController.logout());
 	}
 	
 	@Test
@@ -51,7 +53,7 @@ public class UnitTest {
 	@Test
         public void checkId()
      {
-       Assert.assertEquals(id,networkDevices.getId());
+       Assert.assertEquals('id',networkDevices.getId());
       }
 	@BeforeClass		
     public static void m1() {							
