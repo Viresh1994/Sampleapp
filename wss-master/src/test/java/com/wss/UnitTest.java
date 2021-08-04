@@ -9,7 +9,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 import java.util.ArrayList;
 import com.wss.controller.DevicesController;
 import com.wss.controller.LoginContoller;
-import com.wss.DeviceService;
+import com.wss.service.DeviceService;
 
 import org.junit.After;
 import org.junit.AfterClass;
@@ -29,7 +29,7 @@ public class UnitTest {
 	@Autowired
 	private DevicesController devicesController;
 	@Autowired
-	private DevicesService deviceService;
+	private DeviceService deviceService;
 	
 	@Test
 	public void deviceServiceTest(){
