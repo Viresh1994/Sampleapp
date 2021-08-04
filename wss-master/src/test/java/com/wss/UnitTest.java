@@ -49,10 +49,6 @@ public class UnitTest {
 			Assert.fail();
 		}
 	}
-	@Test
-	public void session() {
-		Assert.assertEquals("redirect:login",loginController.logout());
-	}
 	@BeforeClass		
     public static void m1() {							
         System.out.println("Using @BeforeClass , executed before all test cases ");					
