@@ -9,6 +9,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 import java.util.ArrayList;
 import com.wss.controller.DevicesController;
 import com.wss.controller.LoginContoller;
+import com.wss.entity.NetworkDevices;
 
 import org.junit.After;
 import org.junit.AfterClass;
@@ -27,6 +28,8 @@ public class UnitTest {
 	
 	@Autowired
 	private DevicesController devicesController;
+	@Autowired
+	private NetworkDevices networkDevices;
 	
 	@Test
 	public void loginContollerLoginPage() {
@@ -46,10 +49,9 @@ public class UnitTest {
 		}
 	}
 	@Test
-        public void Setup()
+        public void checkId()
      {
-       String str="This is my first junit program";
-       Assert.assertEquals("This is my first junit program",str);
+       Assert.assertEquals(id,networkDevices.getId());
       }
 	@BeforeClass		
     public static void m1() {							
