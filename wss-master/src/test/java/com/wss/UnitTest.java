@@ -36,7 +36,7 @@ public class UnitTest {
 	
 	@Test
 	public void deviceServiceImplTest(){
-		Assert.assertEquals(deviceService.getAllDevices(),deviceServiceImpl.getAllDevices());
+		Assert.assertNotSame(deviceService.getAllDevices(),deviceServiceImpl.getAllDevices());
 	}
 	
 	@Test
