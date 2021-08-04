@@ -27,8 +27,6 @@ public class UnitTest {
 	
 	@Autowired
 	private DevicesController devicesController;
-	@Autowired
-	private NetworkDevices networkDevices;
 	
 	@Test
 	public void loginContollerLoginPage() {
