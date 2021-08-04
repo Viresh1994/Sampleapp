@@ -51,11 +51,7 @@ public class UnitTest {
 	}
 	@Test
 	public void session() {
-		if(null != loginController.authenticate()) {
-			Assert.assertTrue("Output is not a null object", true);
-		}else {
-			Assert.fail();
-		}
+		Assert.assertEquals("redirect:login",loginController.logout());
 	}
 	@BeforeClass		
     public static void m1() {							
