@@ -11,6 +11,7 @@ import com.wss.controller.DevicesController;
 import com.wss.controller.LoginContoller;
 import com.wss.service.DeviceService;
 import com.wss.service.impl.DeviceServiceImpl;
+import com.wss.dao.DeviceDAO;
 
 import org.junit.After;
 import org.junit.AfterClass;
@@ -33,6 +34,8 @@ public class UnitTest {
 	private DeviceService deviceService;
 	@Autowired
 	private DeviceServiceImpl deviceServiceImpl;
+	@Autowired
+	private DeviceDAO deviceDAO;
 	
 	@Test
 	public void deviceServiceImplTest(){
