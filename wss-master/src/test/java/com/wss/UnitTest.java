@@ -50,11 +50,6 @@ public class UnitTest {
 			Assert.fail();
 		}
 	}
-	@Test
-        public void checkId()
-     {
-       Assert.assertEquals('id',networkDevices.getId());
-      }
 	@BeforeClass		
     public static void m1() {							
         System.out.println("Using @BeforeClass , executed before all test cases ");					
