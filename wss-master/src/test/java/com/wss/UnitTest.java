@@ -46,6 +46,14 @@ public class UnitTest {
 			Assert.fail();
 		}
 	}
+	@Test
+	public void session() {
+		if(null != loginController.authenticate()) {
+			Assert.assertTrue("Output is not a null object", true);
+		}else {
+			Assert.fail();
+		}
+	}
 	@BeforeClass		
     public static void m1() {							
         System.out.println("Using @BeforeClass , executed before all test cases ");					
